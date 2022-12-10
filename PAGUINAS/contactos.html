@@ -1,0 +1,192 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shortcut icon" href="../MULTIMEDIA/favicom.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Logistica</title>
+    <meta name="description" content="PyMES familiar. Venta de herramientas al pormenor. Norte Argentino">
+    <meta name="keywords" content="Familia, PyMES, Herramientas">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:  #557153;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../MULTIMEDIA/tuercanavbar.png" alt="Logo" width="30" height="24">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos y mas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./galeria.html">Galeria de productos</a></li>
+                                <li><a class="dropdown-item" href="./nostros.html">Nosotros, Nuestra Historia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./provincias.html">Logistica!</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-text"> Un historia junto a vos</span>
+                </div>
+        </div>
+    </nav>
+
+    <header class="py-5" style="background-color: #DAE2B6;">
+        <div class="container px-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xxl-6">
+                    <div class="text-center my-5">
+                        <h1 class="fw-bolder mb-3">Nuestra mision es conectar y ayudar a construir!</h1>
+                        <p class="lead fw-normal text-muted mb-4">Nuestas historia empieza hace mas de 100 años, una
+                            mula y una necesidad</p>
+                        <a class="btn btn-primary" style="background-color: #7D8F69;" href="./nostros.html">Conoce
+                            nuestra historia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5" style="background-color: #DAE2B6;">
+        <div class="container px-5">
+            <div class="rounded-3 py-5 px-4 px-md-5 mb-5" style="background-color: #E6E5A3;">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
+                    </div>
+                    <h1 class="fw-bolder">Comunicate con nosotros!</h1>
+                    <p class="lead fw-normal text-muted mb-0"> ¡Nos interesa saber todo!
+                        ¿Como te atendimos?, ¿tenes alguna sugerencia?, ¿hay algun producto en especial que te interesa
+                        que traigamos?</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="nombre" type="text" placeholder="Tu nombre completo"
+                                data-sb-validations="required" />
+                            <label for="nombre">Tu Nombre completo</label>
+                            <div class="invalid-feedback" data-sb-feedback="nombre:required">Falta el Nombre</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="un@mailinventado.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Direcion de mail</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="celular" type="tel" placeholder="(385) 155-7890"
+                                data-sb-validations="required" />
+                            <label for="celular">Numero de telefono</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Falta numero de celular
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="Mensajes" type="text" placeholder="Dejanos tu mensaje..."
+                                style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Tu mensaje...</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Introduci tu mensaje</div>
+                        </div>
+
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Tu mensaje se envio correctamente!</div>
+                            </div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error al mandar el mensaje!</div>
+                        </div>
+                        <div class="d-grid"><button class="btn btn-primary" style="background-color: #7D8F69;"
+                                id="submitButton" type="submit">Enviar</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="py-4 mt-auto" style="background-color: #E6E5A3;">
+                <div class="container px-5">
+                    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                        <div class="col-auto">
+                            <div class="small m-0 text-white">Copyright &copy; Ferreteria de Don Francisco TM</div>
+                        </div>
+                        <div class="col-auto">
+                            <a class="link-light small" href="#!">PRIVACIDAD</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="#!">TERMINOS</a>
+                            <span class="text-white mx-1">&middot;</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
